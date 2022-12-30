@@ -1,3 +1,4 @@
 export default function Home() {
-  return <div>home</div>;
+  const users: any = [];
+  return <h1>{users[0].name}</h1>;
 }
