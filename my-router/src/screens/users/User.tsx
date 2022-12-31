@@ -10,7 +10,11 @@ export default function User() {
       </h1>
       <hr />
       <Link to="followers">See Followers</Link>
-      <Outlet />
+      <Outlet
+        context={{
+          Myname: users[Number(params.userId) - 1].name,
+        }}
+      />
     </div>
   );
 }

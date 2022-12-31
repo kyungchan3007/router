@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
         element: <User />,
         children: [
           {
-            path: "Followers",
+            path: "followers",
             element: <Followers />,
           },
         ],
